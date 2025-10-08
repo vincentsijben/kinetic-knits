@@ -26,15 +26,15 @@ void setup() {
   for (int i = 0; i < numPairs; i++) {
     servoA[i].attach(servoPins[i]);
     servoB[i].attach(servoPins[i]); // both on same signal wire (shared)
-    currentAngle[i] = random(15, 8);   // start at random angle
+    currentAngle[i] = 90;//random(15, 8);   // start at random angle
     servoA[i].write(currentAngle[i]);
     servoB[i].write(currentAngle[i]);
 
-    minAngle[i] = random(0, 30);        // each pair has its own min range
-    maxAngle[i] = random(60, 90);       // and its own max range
+    minAngle[i] = random(10, 30);        // each pair has its own min range
+    maxAngle[i] = random(60, 80);       // and its own max range
     moveDirection[i] = 1;
 
-    nextMoveTime[i] = millis() + random(1000, 7000);  // random initial delay
+    nextMoveTime[i] = millis() + random(1000, 13000);  // random initial delay
     isMoving[i] = false;
   }
 }
