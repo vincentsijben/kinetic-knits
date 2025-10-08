@@ -26,7 +26,7 @@ void setup() {
   for (int i = 0; i < numPairs; i++) {
     servoA[i].attach(servoPins[i]);
     servoB[i].attach(servoPins[i]); // both on same signal wire (shared)
-    currentAngle[i] = 90;//random(15, 8);   // start at random angle
+    currentAngle[i] = 80;//random(15, 8);   // start at random angle
     servoA[i].write(currentAngle[i]);
     servoB[i].write(currentAngle[i]);
 
