@@ -6,3 +6,5 @@
 <hr>
 <img src="kinetic-knits-3.jpg" alt="Kinetic Knits" width="400" />
 <hr>
+<img src="kinetic-knits-4.jpg" alt="Kinetic Knits" width="400" />
+<hr>
